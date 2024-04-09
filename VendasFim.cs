@@ -122,6 +122,14 @@ namespace Gerenciador_de_Vendas
             Clientes clientes = new Clientes();
 
             clientes.ShowDialog();
+
+            string ClienteAtt = Cliente.cliente;
+            // string[] dados = ClienteAtt.Split("|");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            lstProd.Items.Add(Combo.combo);
         }
     }
 }

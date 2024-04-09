@@ -17,9 +17,14 @@ namespace Gerenciador_de_Vendas
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnAtualizar_Click(object sender, EventArgs e)
         {
-            listBox1.Items.Add(Cliente.cliente);
+            lstCliAtt.Items.Add(Cliente.cliente);
+        }
+
+        private void btnConfirmar_Click(object sender, EventArgs e)
+        {
+           Cliente.cliente = lstCliAtt.SelectedIndex.ToString();
         }
     }
 }
