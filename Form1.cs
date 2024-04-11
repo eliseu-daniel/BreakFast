@@ -41,5 +41,10 @@ namespace Gerenciador_de_Vendas
 
             vendasfim.Show();
         }
+
+        private void btnCanCompra_Click(object sender, EventArgs e)
+        {
+            lstCombos.ClearSelected();
+        }
     }
 }

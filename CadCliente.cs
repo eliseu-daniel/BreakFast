@@ -19,7 +19,7 @@ namespace Gerenciador_de_Vendas
 
         private void btnCliSalvar_Click(object sender, EventArgs e)
         {
-            Cliente.cliente = txtBoxNome.Text + " | " + txtBoxEnd.Text + " | " + txtBoxEmail.Text;
+            Cliente.cliente = txtBoxNome.Text + "|" + txtBoxEnd.Text + "|" + txtBoxEmail.Text;
             if (MessageBox.Show("Deseja realmente Salvar?", "Informação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 MessageBox.Show("Salvo com sucesso", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);

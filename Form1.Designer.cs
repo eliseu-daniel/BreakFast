@@ -74,6 +74,7 @@ namespace Gerenciador_de_Vendas
             this.btnCanCompra.TabIndex = 7;
             this.btnCanCompra.Text = "Cancelar";
             this.btnCanCompra.UseVisualStyleBackColor = true;
+            this.btnCanCompra.Click += new System.EventHandler(this.btnCanCompra_Click);
             // 
             // btnConCompra
             // 
@@ -122,20 +123,20 @@ namespace Gerenciador_de_Vendas
             // clienteToolStripMenuItem
             // 
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.clienteToolStripMenuItem.Text = "Cliente";
             this.clienteToolStripMenuItem.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
             // 
             // produtoToolStripMenuItem
             // 
             this.produtoToolStripMenuItem.Name = "produtoToolStripMenuItem";
-            this.produtoToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.produtoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.produtoToolStripMenuItem.Text = "Produto";
             // 
             // fornecedorToolStripMenuItem
             // 
             this.fornecedorToolStripMenuItem.Name = "fornecedorToolStripMenuItem";
-            this.fornecedorToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.fornecedorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.fornecedorToolStripMenuItem.Text = "Fornecedor";
             // 
             // vendasToolStripMenuItem
@@ -150,13 +151,13 @@ namespace Gerenciador_de_Vendas
             // produtosToolStripMenuItem
             // 
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
-            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.produtosToolStripMenuItem.Text = "Produtos";
             // 
             // totalVendasToolStripMenuItem
             // 
             this.totalVendasToolStripMenuItem.Name = "totalVendasToolStripMenuItem";
-            this.totalVendasToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.totalVendasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.totalVendasToolStripMenuItem.Text = "Total Vendas";
             // 
             // financeiroToolStripMenuItem
@@ -171,13 +172,13 @@ namespace Gerenciador_de_Vendas
             // balançaPatrimonialToolStripMenuItem
             // 
             this.balançaPatrimonialToolStripMenuItem.Name = "balançaPatrimonialToolStripMenuItem";
-            this.balançaPatrimonialToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.balançaPatrimonialToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.balançaPatrimonialToolStripMenuItem.Text = "Faturamento";
             // 
             // iCMSToolStripMenuItem
             // 
             this.iCMSToolStripMenuItem.Name = "iCMSToolStripMenuItem";
-            this.iCMSToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.iCMSToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.iCMSToolStripMenuItem.Text = "ICMS";
             // 
             // notaFiscalToolStripMenuItem

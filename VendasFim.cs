@@ -124,7 +124,13 @@ namespace Gerenciador_de_Vendas
             clientes.ShowDialog();
 
             string ClienteAtt = Cliente.cliente;
-            // string[] dados = ClienteAtt.Split("|");
+            string[] dados = ClienteAtt.Split("|");
+
+            if(ClienteAtt != "")
+            {
+                txtNome.Text = dados[0];
+                txtEnd.Text = dados[1];
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
