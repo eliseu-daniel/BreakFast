@@ -33,7 +33,6 @@ namespace Gerenciador_de_Vendas
             this.lstCliAtt = new System.Windows.Forms.ListBox();
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnAtualizar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstCliAtt
@@ -63,22 +62,11 @@ namespace Gerenciador_de_Vendas
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
-            // btnAtualizar
-            // 
-            this.btnAtualizar.Location = new System.Drawing.Point(629, 296);
-            this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(111, 23);
-            this.btnAtualizar.TabIndex = 3;
-            this.btnAtualizar.Text = "Atualizar";
-            this.btnAtualizar.UseVisualStyleBackColor = true;
-            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
-            // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(761, 450);
-            this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.lstCliAtt);
@@ -96,6 +84,5 @@ namespace Gerenciador_de_Vendas
         private System.Windows.Forms.ListBox lstCliAtt;
         private System.Windows.Forms.Button btnConfirmar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnAtualizar;
     }
 }

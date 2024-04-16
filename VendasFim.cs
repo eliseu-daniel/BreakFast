@@ -17,15 +17,20 @@ namespace Gerenciador_de_Vendas
             InitializeComponent();
         }
 
-        private void atualizarCombo(Object sender, EventArgs e)
+        private void VendasFim_Load(object sender, EventArgs e)
         {
-            lstProd.Items.Add(Combo.combo);
-            
+            if (ComboVenda.venda != null)
+            {
+                lstProd.Items.Add(ComboVenda.venda);
+            }
         }
 
         private void adicionais(Object sender, EventArgs e)
         {
-            if(chkBox1.Checked == true)
+            limparCheck();
+            lstProd.Items.Add(ComboVenda.venda);
+
+            if (chkBox1.Checked == true)
             {
                 lstProd.Items.Add(chkBox1.Text);
 
@@ -124,18 +129,26 @@ namespace Gerenciador_de_Vendas
             clientes.ShowDialog();
 
             string ClienteAtt = Cliente.cliente;
-            string[] dados = ClienteAtt.Split("|");
 
-            if(ClienteAtt != "")
+            if(ClienteAtt != null)
             {
-                txtNome.Text = dados[0];
-                txtEnd.Text = dados[1];
+                string[] dados = ClienteAtt.Split('|');
+                if(dados[0] != "")
+                {
+                    txtNome.Text = dados[0];
+                    txtEnd.Text = dados[1];
+                }
             }
+
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnOK_Click(object sender, EventArgs e)
         {
-            lstProd.Items.Add(Combo.combo);
+            if(MessageBox.Show("O pagamento foi realizado com sucesso?", "Informação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                MessageBox.Show("Obrigado e volte sempre", "Agradecimentos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
         }
     }
 }

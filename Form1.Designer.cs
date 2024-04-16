@@ -44,7 +44,6 @@ namespace Gerenciador_de_Vendas
             this.totalVendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.financeiroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.balançaPatrimonialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.iCMSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.notaFiscalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.emissãoNFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cancelarNFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -132,12 +131,14 @@ namespace Gerenciador_de_Vendas
             this.produtoToolStripMenuItem.Name = "produtoToolStripMenuItem";
             this.produtoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.produtoToolStripMenuItem.Text = "Produto";
+            this.produtoToolStripMenuItem.Click += new System.EventHandler(this.produtoToolStripMenuItem_Click);
             // 
             // fornecedorToolStripMenuItem
             // 
             this.fornecedorToolStripMenuItem.Name = "fornecedorToolStripMenuItem";
             this.fornecedorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.fornecedorToolStripMenuItem.Text = "Fornecedor";
+            this.fornecedorToolStripMenuItem.Click += new System.EventHandler(this.fornecedorToolStripMenuItem_Click);
             // 
             // vendasToolStripMenuItem
             // 
@@ -153,18 +154,19 @@ namespace Gerenciador_de_Vendas
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
             this.produtosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.produtosToolStripMenuItem.Text = "Produtos";
+            this.produtosToolStripMenuItem.Click += new System.EventHandler(this.produtosToolStripMenuItem_Click);
             // 
             // totalVendasToolStripMenuItem
             // 
             this.totalVendasToolStripMenuItem.Name = "totalVendasToolStripMenuItem";
             this.totalVendasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.totalVendasToolStripMenuItem.Text = "Total Vendas";
+            this.totalVendasToolStripMenuItem.Click += new System.EventHandler(this.totalVendasToolStripMenuItem_Click);
             // 
             // financeiroToolStripMenuItem
             // 
             this.financeiroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.balançaPatrimonialToolStripMenuItem,
-            this.iCMSToolStripMenuItem});
+            this.balançaPatrimonialToolStripMenuItem});
             this.financeiroToolStripMenuItem.Name = "financeiroToolStripMenuItem";
             this.financeiroToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.financeiroToolStripMenuItem.Text = "Financeiro";
@@ -174,12 +176,7 @@ namespace Gerenciador_de_Vendas
             this.balançaPatrimonialToolStripMenuItem.Name = "balançaPatrimonialToolStripMenuItem";
             this.balançaPatrimonialToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.balançaPatrimonialToolStripMenuItem.Text = "Faturamento";
-            // 
-            // iCMSToolStripMenuItem
-            // 
-            this.iCMSToolStripMenuItem.Name = "iCMSToolStripMenuItem";
-            this.iCMSToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.iCMSToolStripMenuItem.Text = "ICMS";
+            this.balançaPatrimonialToolStripMenuItem.Click += new System.EventHandler(this.balançaPatrimonialToolStripMenuItem_Click);
             // 
             // notaFiscalToolStripMenuItem
             // 
@@ -195,12 +192,14 @@ namespace Gerenciador_de_Vendas
             this.emissãoNFToolStripMenuItem.Name = "emissãoNFToolStripMenuItem";
             this.emissãoNFToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.emissãoNFToolStripMenuItem.Text = "Emissão NF";
+            this.emissãoNFToolStripMenuItem.Click += new System.EventHandler(this.emissãoNFToolStripMenuItem_Click);
             // 
             // cancelarNFToolStripMenuItem
             // 
             this.cancelarNFToolStripMenuItem.Name = "cancelarNFToolStripMenuItem";
             this.cancelarNFToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cancelarNFToolStripMenuItem.Text = "Cancelar NF";
+            this.cancelarNFToolStripMenuItem.Click += new System.EventHandler(this.cancelarNFToolStripMenuItem_Click);
             // 
             // cOMBOSToolStripMenuItem
             // 
@@ -267,7 +266,6 @@ namespace Gerenciador_de_Vendas
         private System.Windows.Forms.ToolStripMenuItem cOMBOSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem totalVendasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem produtosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem iCMSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem balançaPatrimonialToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem emissãoNFToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cancelarNFToolStripMenuItem;

@@ -15,16 +15,19 @@ namespace Gerenciador_de_Vendas
         public Clientes()
         {
             InitializeComponent();
-        }
-
-        private void btnAtualizar_Click(object sender, EventArgs e)
-        {
-            lstCliAtt.Items.Add(Cliente.cliente);
+            if (Cliente.cliente != null)
+            {
+                lstCliAtt.Items.Add(Cliente.cliente);
+            }
         }
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-           Cliente.cliente = lstCliAtt.SelectedIndex.ToString();
+           Cliente.cliente = lstCliAtt.SelectedItem.ToString();
+            if(MessageBox.Show("Deseja continuar?", "Informação", MessageBoxButtons.YesNo, MessageBoxIcon.Question)==DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }

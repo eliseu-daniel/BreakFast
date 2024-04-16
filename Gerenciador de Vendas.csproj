@@ -59,6 +59,24 @@
     <Compile Include="CadEditCombos.Designer.cs">
       <DependentUpon>CadEditCombos.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadFornecedor.Designer.cs">
+      <DependentUpon>CadFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadProduto.Designer.cs">
+      <DependentUpon>CadProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cancelarNF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cancelarNF.Designer.cs">
+      <DependentUpon>cancelarNF.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cliente.cs" />
     <Compile Include="Clientes.cs">
       <SubType>Form</SubType>
@@ -67,6 +85,19 @@
       <DependentUpon>Clientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Combo.cs" />
+    <Compile Include="ComboVenda.cs" />
+    <Compile Include="emissaoNF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emissaoNF.Designer.cs">
+      <DependentUpon>emissaoNF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fatFin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fatFin.Designer.cs">
+      <DependentUpon>fatFin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,14 +112,41 @@
     <Compile Include="VendasFim.Designer.cs">
       <DependentUpon>VendasFim.cs</DependentUpon>
     </Compile>
+    <Compile Include="vendProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vendProd.Designer.cs">
+      <DependentUpon>vendProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vendTT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vendTT.Designer.cs">
+      <DependentUpon>vendTT.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CadCliente.resx">
       <DependentUpon>CadCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadEditCombos.resx">
       <DependentUpon>CadEditCombos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CadFornecedor.resx">
+      <DependentUpon>CadFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadProduto.resx">
+      <DependentUpon>CadProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cancelarNF.resx">
+      <DependentUpon>cancelarNF.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Clientes.resx">
       <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emissaoNF.resx">
+      <DependentUpon>emissaoNF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fatFin.resx">
+      <DependentUpon>fatFin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -105,6 +163,12 @@
     </Compile>
     <EmbeddedResource Include="VendasFim.resx">
       <DependentUpon>VendasFim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vendProd.resx">
+      <DependentUpon>vendProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vendTT.resx">
+      <DependentUpon>vendTT.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

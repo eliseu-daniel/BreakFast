@@ -32,8 +32,7 @@ namespace Gerenciador_de_Vendas
             if (MessageBox.Show("Deseja realmente Salvar?", "Informação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 MessageBox.Show("Salvo com sucesso", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                cmbTipo.Text =
-                txtBoxProd.Text = string.Empty;
+                Close();
             }
 
 
